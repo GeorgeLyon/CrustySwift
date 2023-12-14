@@ -3,5 +3,23 @@
 version = 3
 
 [[package]]
+name = "capnp"
+version = "0.18.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0e78424967d6d4c8e295a3b5114ae6d849052e9dbbed3e62589a76acda54e3f0"
+dependencies = [
+ "embedded-io",
+]
+
+[[package]]
+name = "embedded-io"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "658bbadc628dc286b9ae02f0cb0f5411c056eb7487b72f0083203f115de94060"
+
+[[package]]
 name = "rust_core"
 version = "0.1.0"
+dependencies = [
+ "capnp",
+]

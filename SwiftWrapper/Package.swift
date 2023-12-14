@@ -13,9 +13,10 @@ let package = Package(
     .binaryTarget(
       name: "RustCore",
       path: "../RustCore/target/RustCore.xcframework"),
+    .target(name: "Schemas"),
     .target(
       name: "SwiftWrapper",
-      dependencies: ["RustCore"]),
+      dependencies: ["RustCore", "Schemas"]),
     .testTarget(
       name: "SwiftWrapperTests",
       dependencies: ["SwiftWrapper"]),
