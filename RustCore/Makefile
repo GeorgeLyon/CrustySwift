@@ -1,5 +1,5 @@
 xcframework: macos ios
-	$(RM) -f target/RustCore.xcframework
+	$(RM) -rf target/RustCore.xcframework
 	xcodebuild -create-xcframework \
 		-library target/_universal-apple-darwin/release/librust_core.a \
 		-headers ./include \

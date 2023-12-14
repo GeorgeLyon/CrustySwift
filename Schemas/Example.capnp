@@ -7,6 +7,6 @@ struct Request {
 
 struct Response {
   boringSum @0 :UInt64;
-  rustSum @1 :UInt64;
+  capnpSum @1 :UInt64;
 }
 
